@@ -2563,6 +2563,18 @@ iframe {
   }
 }
 @media (max-width: 767px) {
+  .item-catalog.type-small {
+    font-size: 14px;
+  }
+  .item-catalog.type-small .elm-price {
+    font-size: 1em;
+  }
+  .item-catalog.type-large {
+    font-size: 16px;
+  }
+  .item-catalog.type-large .elm-price {
+    font-size: 17px;
+  }
   .item-catalog.type-compare .btn-action-ico.ico-favorites-toggle {
     display: none;
   }
