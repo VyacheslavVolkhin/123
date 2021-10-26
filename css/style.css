@@ -2234,7 +2234,7 @@ iframe {
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
   color: #000;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.3;
   text-align: left;
   font-weight: 400;
@@ -2384,6 +2384,9 @@ iframe {
 }
 .item-catalog a:hover {
   color: #000;
+}
+.item-catalog .elm-price {
+  font-size: 16px;
 }
 .item-catalog .elm-price.price-old {
   font-size: 10px;
