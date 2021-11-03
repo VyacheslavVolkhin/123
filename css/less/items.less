@@ -1350,3 +1350,28 @@
         }
     }
 }
+.btn-round {
+    display: block;
+    position: relative;
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    border: 1px solid #e0e3e6;
+    background: linear-gradient(45deg, #7995c6, #828fc2, #9e89bd, #b78dbd);
+    &:after, &:before {
+        content: "";
+        display: block;
+        width: 26px;
+        height: 2px;
+        background: #fff;
+        border-radius: 1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -1px 0 0 -13px;
+        transform: rotate(45deg);
+    }
+    &:before {
+        transform: rotate(-45deg);
+    }
+}

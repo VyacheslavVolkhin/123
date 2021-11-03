@@ -643,6 +643,30 @@
         line-height: 1;
         margin-top: 35px;
     }
+    .notify-wrap {
+        margin-bottom: 40px;
+        .frm-main-button {
+            .field-button {
+                padding-left: 9px;
+                .btn, button {
+                    padding: 0 20px;
+                    height: 55px;
+                    min-width: 0;
+                }
+            }
+            .field-input {
+                input {
+                    height: 55px;
+                }
+            }
+        }
+    }
+    .product-info-wrap {
+        display: block;
+        font-size: 16px;
+        line-height: 22/16;
+        margin: -10px 0 26px 0;
+    }
     .stock-wrap {
         display: block;
         font-size: 14px;
@@ -652,20 +676,12 @@
         color: #000;
         padding-left: 33px;
         &.stock-out {
-            padding-left: 14px;
             color: #000;
             .stock-title {
                 padding-right: 0;
-                &:before {
-                    display: none;
-                }
             }
             &:before {
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-                background: #FF132B;
-                top: 9px;
+                background-image: url(../img/icons/out.svg);
             }
         }
         &:before {
@@ -1824,9 +1840,20 @@
         }
     }
     .card-other-wrap {
+        &.product-out {
+            .info-wrap {
+                padding-top: 0;
+            }
+        }
+        .product-info-wrap,
+        .notify-wrap {
+            display: none;
+        }
         .main-info-wrap {
             display: flex;
             flex-direction: column-reverse;
+            &+.info-wrap {
+            }
         }
         .main-buttons-wrap {
             display: block;
@@ -2736,6 +2763,13 @@
         width: 100%;
         padding: 88px 0 0 0;
         justify-content: center;
+        .product-info-wrap,
+        .notify-wrap {
+            display: none;
+            &~.main-info-action {
+                padding-top: 0;
+            }
+        }
         .info-wrap {
             width: 50%;
             padding: 0 0 0 0;
