@@ -126,10 +126,17 @@ $(document).ready(function(){
         var stickyTop = $('.js-fixed-box').offset().top;
         $(window).scroll(function () {
             var windowTop = $(window).scrollTop() + 20;
+            var fBottom = $('.wrap').height() - $('.js-fixed-box').height() - windowTop;
+            var fMaxBottom = $('.wrap').height() - $('.cart-side-wrap').height() - $('.cart-side-wrap').offset().top;
             if (stickyTop < windowTop) {
                 $('.wrap').addClass('fixed-active');
             } else {
                 $('.wrap').removeClass('fixed-active');
+            }
+            if (fBottom < fMaxBottom) {
+                $('.wrap').addClass('fixed-bottom');
+            } else {
+                $('.wrap').removeClass('fixed-bottom');
             }
         });
     }

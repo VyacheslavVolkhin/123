@@ -36,15 +36,19 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/_html/main.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/css/less/forms.less" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/css/less/style.less" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/css/less/structura.less" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/js/scripts.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/css/less/content.less" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/_html/cart.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/css/less/items.less" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/_html/order.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/css/less/main.less" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/_includes/head.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/_includes/header.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/_includes/footer.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/_html/main.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/js/scripts.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsBowerSettings">
     <bower-package value="" />

@@ -303,6 +303,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.header-top-panel .logo-wrap {
+  display: none;
+  margin: 0 50px 0 0;
+  width: 128px;
+  position: relative;
+  line-height: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
 .header-top-panel .location-wrap {
   position: relative;
   padding-right: 15px;
@@ -816,6 +825,13 @@ body {
   .wrap.filter-showed:after {
     display: block;
   }
+  .header-hide .header-main-panel .search-wrap {
+    display: none;
+  }
+  .header-hide .header-main-panel .inner-wrap {
+    height: auto;
+    padding-bottom: 20px;
+  }
   .no-order-footer .footer {
     padding-bottom: 64px;
   }
@@ -1064,6 +1080,38 @@ body {
   .page {
     padding-left: 22px;
     padding-right: 22px;
+  }
+  .header-hide .header-main-panel {
+    display: none;
+  }
+  .header-hide .header-top-panel .inner-wrap {
+    height: 75px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-hide .header-top-panel .menu-wrap {
+    display: none;
+  }
+  .header-hide .header-top-panel .phone-number {
+    font-weight: 500;
+    color: #5144DB;
+    font-size: 16px;
+  }
+  .header-hide .header-top-panel .location-wrap {
+    padding-left: 184px;
+  }
+  .header-hide .header-top-panel .location-wrap .btn-action-text {
+    color: #000;
+  }
+  .header-hide .header-top-panel .location-wrap .btn-action-text .elm-ico {
+    -webkit-filter: brightness(0);
+            filter: brightness(0);
+  }
+  .header-hide .header-top-panel .location-wrap .btn-action-text .button-title {
+    color: #000;
   }
   .main-sbs-box {
     border-radius: 35px 35px 0 0;
@@ -1355,6 +1403,24 @@ body {
   .page {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .header-hide .header-top-panel .inner-wrap {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .header-hide .header-top-panel .location-wrap {
+    padding-left: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .header-hide .header-top-panel .phone-wrap {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .header-hide .header-top-panel .logo-wrap {
+    display: block;
   }
   .main-sbs-box {
     border-radius: 0;
@@ -6154,6 +6220,11 @@ iframe {
     background: #fff;
     width: 335px;
     top: 20px;
+  }
+  .fixed-active.fixed-bottom .js-fixed-box {
+    position: absolute;
+    top: auto;
+    bottom: -20px;
   }
   .compare-slider-box .tbl-inner-wrap {
     margin: 0 -30px;
